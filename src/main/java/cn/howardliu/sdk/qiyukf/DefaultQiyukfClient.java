@@ -71,6 +71,7 @@ public class DefaultQiyukfClient implements QiyukfClient {
         final R resp;
         try {
             resp = gson.fromJson(json, respClass);
+            resp.parseData();
         } catch (JsonSyntaxException e) {
             throw new QiyuKfException("解析json数据失败，json为：" + json + "，待解析类为：" + respClass, e);
         }

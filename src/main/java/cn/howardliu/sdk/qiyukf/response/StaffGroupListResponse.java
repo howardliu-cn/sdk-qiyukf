@@ -22,29 +22,22 @@ import java.util.List;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class StaffGroupMembersResponse extends BaseResponse {
-    private List<Staff> data = new ArrayList<>();
+public class StaffGroupListResponse extends BaseResponse {
+    private List<StaffGroup> data = new ArrayList<>();
 
     @Override
     public void parseData() {
         final JsonArray jsonArray = new JsonParser().parse(getMessage()).getAsJsonArray();
         for (final JsonElement element : jsonArray) {
-            data.add(new Gson().fromJson(element, Staff.class));
+            data.add(new Gson().fromJson(element, StaffGroup.class));
         }
     }
 
     @NoArgsConstructor
     @Data
-    public static class Staff {
+    public static class StaffGroup {
         private Integer id;
-        private String username;
-        private String realname;
-        private String nickname;
-        private Integer role;
-        private String phone;
-        private String email;
-        private Integer status;
-        private long createtime;
-        private Integer maxServiceCount;
+        private String name;
+        private List<Integer> staffIdList;
     }
 }

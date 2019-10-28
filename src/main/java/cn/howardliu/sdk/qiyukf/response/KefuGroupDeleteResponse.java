@@ -1,6 +1,8 @@
 package cn.howardliu.sdk.qiyukf.response;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 /**
  * <br>created at 2019/10/28
@@ -9,5 +11,7 @@ import lombok.Data;
  * @since 1.0.0
  */
 @Data
-public class KefuGroupDeleteResponse extends BaseMessageResponse {
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
+public class KefuGroupDeleteResponse extends BaseResponse {
 }

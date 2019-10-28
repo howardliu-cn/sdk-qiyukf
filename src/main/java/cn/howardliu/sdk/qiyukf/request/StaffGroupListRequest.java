@@ -1,6 +1,6 @@
 package cn.howardliu.sdk.qiyukf.request;
 
-import cn.howardliu.sdk.qiyukf.response.StaffGroupResponse;
+import cn.howardliu.sdk.qiyukf.response.StaffGroupListResponse;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -18,7 +18,7 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class StaffGroupListRequest extends BaseRequest<StaffGroupResponse> {
+public class StaffGroupListRequest extends BaseRequest<StaffGroupListResponse> {
     private Boolean staff = false;
 
     @Override
@@ -27,7 +27,7 @@ public class StaffGroupListRequest extends BaseRequest<StaffGroupResponse> {
     }
 
     @Override
-    public Class<StaffGroupResponse> responseClass() {
-        return StaffGroupResponse.class;
+    public Class<StaffGroupListResponse> responseClass() {
+        return StaffGroupListResponse.class;
     }
 }

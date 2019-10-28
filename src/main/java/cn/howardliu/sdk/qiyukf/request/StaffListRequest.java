@@ -25,7 +25,7 @@ public class StaffListRequest extends BaseRequest<StaffListResponse> {
 
     @Override
     public @NotNull String command() {
-        return "/v2/staff/list";
+        return "/openapi/v2/staff/list";
     }
 
     @Override

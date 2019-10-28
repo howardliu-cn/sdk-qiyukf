@@ -15,5 +15,5 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class KefuGroupUpdateResponse extends BaseMessageResponse {
+public class KefuGroupUpdateResponse extends BaseResponse {
 }
