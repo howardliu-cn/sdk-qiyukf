@@ -9,10 +9,7 @@ package cn.howardliu.sdk.qiyukf;
 public class QiyuPushCheckSumTest {
     @org.junit.Test
     public void encode() {
-        final String content = "{\n" +
-                "  \"status\":0,\n" +
-                "  \"role\":1\n" +
-                "}";
+        final String content = "{\"status\": 0,\"role\": 1}";
         final String appSecret = "4AEE2289D2B446D88942EC4825DE6511";
         final String nonce = Md5.md5(content);
         final Long time = (System.currentTimeMillis() / 1000);
