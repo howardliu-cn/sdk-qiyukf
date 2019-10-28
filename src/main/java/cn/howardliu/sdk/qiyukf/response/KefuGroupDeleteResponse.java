@@ -9,6 +9,5 @@ import lombok.Data;
  * @since 1.0.0
  */
 @Data
-public class KefuGroupDeleteResponse extends BaseResponse {
-    private String message;
+public class KefuGroupDeleteResponse extends BaseMessageResponse {
 }

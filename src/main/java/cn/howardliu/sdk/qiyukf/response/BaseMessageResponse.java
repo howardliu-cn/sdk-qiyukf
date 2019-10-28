@@ -2,7 +2,6 @@ package cn.howardliu.sdk.qiyukf.response;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -12,8 +11,8 @@ import lombok.ToString;
  * @since 1.0.0
  */
 @Data
-@NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class KefuGroupUpdateResponse extends BaseMessageResponse {
+public abstract class BaseMessageResponse extends BaseResponse {
+    private String message;
 }

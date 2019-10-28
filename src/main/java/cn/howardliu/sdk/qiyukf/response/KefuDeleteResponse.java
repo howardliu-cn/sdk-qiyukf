@@ -15,6 +15,5 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class KefuDeleteResponse extends BaseResponse {
-    private String message;
+public class KefuDeleteResponse extends BaseMessageResponse {
 }
