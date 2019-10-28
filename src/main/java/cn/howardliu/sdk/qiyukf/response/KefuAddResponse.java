@@ -16,5 +16,7 @@ import lombok.ToString;
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class KefuAddResponse extends BaseResponse {
+    private String message;
+
     private String id;// 客服id
 }

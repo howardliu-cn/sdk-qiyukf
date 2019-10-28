@@ -14,7 +14,6 @@ import javax.validation.constraints.NotNull;
 public abstract class BaseResponse {
     @NotNull
     private String code;
-    private String message;
 
     @NotNull
     public boolean isSuccess() {
