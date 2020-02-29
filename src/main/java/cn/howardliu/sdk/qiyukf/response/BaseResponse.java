@@ -14,7 +14,6 @@ import javax.validation.constraints.NotNull;
 public abstract class BaseResponse {
     @NotNull
     private String code;
-    @NotNull
     private String message;
 
     public void parseData() {
